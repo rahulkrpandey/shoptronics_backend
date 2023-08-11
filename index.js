@@ -27,16 +27,6 @@ mongoose
     console.log(err);
   });
 
-// const { MongoClient, ServerApiVersion } = require('mongodb');
-// const uri = "mongodb+srv://rahulkrpandey:mongodbserver@cluster0.jysjyy8.mongodb.net/?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   console.log(collection);
-//   client.close();
-// });
-
-
 // REGISTER AND LOGIN
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
